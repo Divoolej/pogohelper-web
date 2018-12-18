@@ -60,6 +60,9 @@ jobs:
       - attach_workspace:
           at: ~/repo
       - run:
+          name: Make sure ~/.ssh exists
+          command: mkdir -p ~/.ssh
+      - run:
           name: Add ssh key to known hosts
           command: echo $DEPLOY_PUBLIC_KEY >> ~/.ssh/known_hosts
       - run:

@@ -23,8 +23,10 @@ module.exports = (shipit) => {
   });
 
   shipit.blTask('build', async () => {
-    await shipit.local(
-      `cd ${shipit.workspace} && yarn build --environment production`,
-    );
+    await shipit.local(`
+      cd ${shipit.workspace} &&
+      yarn install &&
+      yarn build --environment production
+    `);
   });
 };
