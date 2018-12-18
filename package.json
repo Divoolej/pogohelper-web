@@ -21,5 +21,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "shipit-cli": "^4.1.2",
+    "shipit-deploy": "^4.1.3"
+  }
 }
