@@ -1,2 +1,2 @@
-# pogohelper-web
-https://pogohelper.top
+# PoGoHelper - Web application
+#### https://pogohelper.top
