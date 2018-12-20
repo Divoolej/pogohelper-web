@@ -2,12 +2,18 @@
   "name": "pogohelper-web",
   "private": true,
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
+    "classnames": "^2.2.6",
+    "nes.css": "^1.0.0",
     "node-sass": "^4.11.0",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1"
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2",
+    "react-router-dom": "^4.3.1",
+    "react-router-prop-types": "^1.0.4",
+    "react-scripts": "2.1.1",
+    "react-select": "^2.1.2",
+    "react-select-nes-css-theme": "^1.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -17,7 +23,7 @@
     "stylelint": "stylelint \"src/**/*.scss\"",
     "eslint": "eslint \"src/**/*.js\"",
     "lint": "eslint \"src/**/*.js\" && stylelint \"src/**/*.scss\"",
-    "optimize-svg": "svgo -f src/assets/images"
+    "optimize-svgs": "svgo -f src/assets/images"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -33,13 +39,15 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1",
+    "husky": "^1.3.0",
     "shipit-cli": "^4.1.2",
     "shipit-deploy": "^4.1.3",
     "stylelint": "^9.9.0",
     "stylelint-config-css-modules": "^1.3.0",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-declaration-use-variable": "^1.7.0",
-    "stylelint-order": "^2.0.0"
+    "stylelint-order": "^2.0.0",
+    "svgo": "^1.1.1"
   },
   "husky": {
     "hooks": {
