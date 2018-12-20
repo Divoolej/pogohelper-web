@@ -15,6 +15,9 @@ module.exports = {
           },
         },
       },
+      "node": {
+        "paths": ["src"]
+      },
     },
   },
   rules: {

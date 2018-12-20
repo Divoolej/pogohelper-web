@@ -1,0 +1,31 @@
+@import '~styles/index.scss';
+
+.container {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.link {
+  width: 100%;
+
+  @media only screen and (min-width: #{$navbar-breakpoint-min}) {
+    width: 368px;
+  }
+
+  & + & {
+    @media only screen and (max-width: #{$navbar-breakpoint-max}) {
+      margin-top: 4px;
+    }
+  }
+}
+
+.button {
+  width: 100%;
+  font-size: $fs-small;
+}
