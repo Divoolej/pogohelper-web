@@ -3,11 +3,18 @@ html {
 }
 
 #root {
-  width: 920px;
+  max-width: 1080px;
+  height: 100%;
+  padding: 16px 16px 0;
+
+  @media only screen and (max-width: 1080px) {
+    min-width: 100vw;
+  }
 }
 
 body {
   display: flex;
-  padding: 32px 16px;
+  height: 100vh;
+  font-size: $fs-small;
   justify-content: center;
 }

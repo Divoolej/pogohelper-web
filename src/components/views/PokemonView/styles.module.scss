@@ -1,0 +1,37 @@
+@import '~styles/index.scss';
+
+.section {
+  & + & {
+    margin-top: 16px;
+  }
+}
+
+.label {
+  display: flex;
+  margin: 8px 0 8px;
+  font-size: $fs-small;
+}
+
+.error {
+  display: flex;
+  margin-top: 6px;
+  color: $color-error;
+}
+
+.select {
+  font-size: $fs-small;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.lastSection {
+  display: flex;
+  margin-top: 16px;
+  justify-content: center;
+
+  button {
+    width: 100%;
+  }
+}

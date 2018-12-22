@@ -31,5 +31,6 @@ module.exports = {
     }],
     'react/no-did-update-set-state': 'off',
     'import/prefer-default-export': 'off',
+    'object-curly-newline': 'off',
   },
 };
