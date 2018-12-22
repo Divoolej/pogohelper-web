@@ -10,13 +10,17 @@ import {
 const Button = ({
   className,
   isPrimary,
+  isSuccess,
   children,
   onClick,
 }) => (
   <button
     type="button"
     onClick={onClick}
-    className={cx(className, 'nes-btn', { 'is-primary': isPrimary })}
+    className={cx(className, 'nes-btn', {
+      'is-primary': isPrimary,
+      'is-success': isSuccess,
+    })}
   >
     {children}
   </button>
@@ -25,6 +29,7 @@ const Button = ({
 Button.propTypes = {
   className: string,
   isPrimary: bool,
+  isSuccess: bool,
   children: node,
   onClick: func,
 };
@@ -32,6 +37,7 @@ Button.propTypes = {
 Button.defaultProps = {
   className: '',
   isPrimary: false,
+  isSuccess: false,
   children: null,
   onClick: null,
 };
